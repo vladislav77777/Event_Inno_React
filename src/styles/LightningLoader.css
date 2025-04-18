@@ -1,0 +1,64 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.loading-bar {
+  position: relative;
+  width: 80%;
+  height: 32px;
+  background-color: #eee;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.loading-progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  background: linear-gradient(to right, #f00, #ffd700);
+  animation: loading 3s linear forwards;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.mcqueen-car {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 4.2em;
+  height: auto;
+  transform: translateY(-50%);
+  animation: driveWithBar 3s linear forwards;
+  z-index: 2;
+}
+
+@keyframes driveWithBar {
+  from { left: 0%; }
+  to   { left: 100%; }
+}
+
+.loader-text {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+@keyframes loading {
+  from { transform: translateX(-100%) translateY(-50%); }
+  to   { transform: translateX(0) translateY(-50%); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

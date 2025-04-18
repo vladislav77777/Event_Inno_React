@@ -1,0 +1,269 @@
+.event-list-container {
+    max-width: 700px;
+    /* padding: 1.2rem; */
+    /* margin-left: 10px; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.event-list-outer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.event-list-container h2 {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+}
+
+.event-list li:hover {
+    transform: scale(1.01);
+}
+
+.event-list li strong {
+    font-size: 1.2rem;
+    color: #ea95e0;
+}
+
+.event-list li span {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.event-links {
+    margin-top: 1rem;
+}
+
+.event-links a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+    margin-right: 1rem;
+    transition: color 0.3s ease;
+}
+
+.event-links a:hover {
+    color: #1d6fa5;
+}
+
+.event-links button {
+    background: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.event-links button:hover {
+    background: #ca6b1d;
+}
+
+.status-message {
+    margin-top: 0.7rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #2ecc71;
+}
+
+.status-message:empty {
+    display: none;
+}
+
+.create-link {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.create-link a {
+    display: inline-block;
+    text-decoration: none;
+    background: hsl(147, 53%, 45%);
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.create-link a:hover {
+    background: #27ae60;
+}
+
+
+.register-link {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.register-link a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #0077cc;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+    color: #005fa3;
+}
+
+.scroll-wrapper {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    /* цвет трека, темный как фон */
+    border-radius: 10px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #444;
+    /* ползунок */
+    border-radius: 10px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #666;
+    /* При наведении */
+}
+
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.event-list li {
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.event-list li.event-card {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    position: relative;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.event-list li.event-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #a9d4ff;
+}
+
+.delete-btn {
+    background: transparent;
+    color: #e74c3c;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.delete-btn:hover {
+    color: #c0392b;
+}
+
+.event-actions {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.event-actions button,
+.event-actions .participants-link {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.register-btn {
+    background: #2ecc71;
+    color: white;
+    border: none;
+}
+
+.register-btn:hover {
+    background: #27ae60;
+}
+
+.unregister-btn {
+    background: #e67e22;
+    color: white;
+    border: none;
+}
+
+.unregister-btn:hover {
+    background: #ca6b1d;
+}
+
+.participants-link {
+    background: #3498db;
+    color: white;
+    display: inline-block;
+}
+
+.participants-link:hover {
+    background: #2980b9;
+}
+
+.status-message {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #2ecc71;
+}
+
+.status-message {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.status-message.error {
+    color: red;
+}
+
+.status-message.success {
+    color: green;
+}

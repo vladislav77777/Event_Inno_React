@@ -1,0 +1,140 @@
+.event-form-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: auto;
+  background: linear-gradient(145deg, #1e1d1d, #463c3c);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.event-form-container:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.event-form-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 0%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.event-form-container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 0%;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f8e4e4;
+}
+
+.event-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.event-form-container label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #e3e3ff;
+  font-size: 0.95rem;
+}
+
+.event-form-container input {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  font-size: 1rem;
+  background-color: #ecf4ff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-form-container input:focus {
+  outline: none;
+  border-color: #339af0;
+  box-shadow: 0 0 0 3px rgba(51, 154, 240, 0.2);
+}
+
+.event-form-container button {
+  margin-top: 3%;
+  padding: 0.85rem 1.5rem;
+  background: linear-gradient(135deg, #4f8cff, #2c68ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(47, 102, 255, 0.2);
+}
+
+.event-form-container button:hover {
+  background: linear-gradient(135deg, #2c68ff, #1f4fd1);
+  transform: translateY(-1px);
+}
+
+.event-form-container button:active {
+  transform: translateY(0);
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: -1%;
+  margin-bottom: -1%;
+  display: block;
+}
+
+.datepicker-input {
+  padding: 0.75rem 1rem;
+  max-width: 94%;
+  border-radius: 8px;
+  border: 1px solid #d0d7de;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+}
+
+.datepicker-input:focus {
+  outline: none;
+  border-color: #339af0;
+  box-shadow: 0 0 0 3px rgba(51, 154, 240, 0.2);
+}
+
+.react-datepicker {
+  font-size: 0.75rem;
+  width: auto;
+  transform: scale(0.9);
+  transform-origin: top left;
+}
+
+.react-datepicker__header {
+  padding: 6px;
+}
+
+.react-datepicker__current-month {
+  font-size: 0.75rem;
+  padding-right: 1rem;
+}
+
+.react-datepicker__day,
+.react-datepicker__day-name {
+  width: 1.8rem;
+  line-height: 1.8rem;
+  margin: 0.1rem;
+  font-size: 0.7rem;
+}
+
+.react-datepicker__navigation {
+  top: 10px;
+  line-height: 1;
+}
